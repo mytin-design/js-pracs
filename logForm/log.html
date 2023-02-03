@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Log Form Script</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="log.css">
+    </head>
+    <body>
+        <form action="" id="logForm" method="post">
+            <fieldset>
+                <legend>Username</legend>
+                <input type="text" id="username"  name="username" required aria-autocomplete="both">
+
+            </fieldset>
+            <output id="uOutput"></output>
+            <fieldset>
+                <legend>Password</legend>
+                <input type="password" id="password" name="password" aria-required="true">
+            </fieldset>
+            <output id="pOutput"></output>
+            <button id="login" onclick="verify()">Log In</button>
+        </form>
+        <script src="log.js"></script>
+    </body>
+</html>

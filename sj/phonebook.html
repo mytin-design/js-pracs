@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneBook</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Search" id="sid">
+    <button onclick="search(cname)">Search</button>
+    <p class="output"></p>
+</body>
+<script>
+    //create an object to act as a small database of stored contacts
+    //pass a value as name, and search in the object
+    //return number if available
+    //return not dound if not available
+    let cname = document.getElementById("sid").value;
+
+    /*
+        function search(x) {
+        let result = document.querySelector("p.output");
+        result.innerHTML = x;
+    } 
+    */
+    
+    function search(cname) {
+        let result = document.querySelector("p.output");
+        let contact = "";
+        const phonebook = {
+            "Adams": "0938328",
+        "charlie": "349234",
+        "beyonce" : "4374932",
+        "alex": "4393203",
+        "itass" : "3843032",
+        "berrick": "32903232"
+        }
+
+        contact = phonebook[cname];
+        return result.innerHTML = cname + ": " + contact;
+    }
+
+    //we can make a database of items - such as in an e-commerce website
+    //so that if we search for a name, we get all data about the item;
+    
+</script>
+</html>
